@@ -112,7 +112,7 @@ CMakeLists.txt should have the following contents:
       add_clang_executable(loop-convert
         LoopConvert.cpp
         )
-      target_link_libraries(loop-convert
+      target_link_libraries(loop-convert PRIVATE
         clangTooling
         clangBasic
         clangASTMatchers
